@@ -1,3 +1,78 @@
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+    /* менший padding зверху/знизу */
+    background-color: #ffffff;
+    border-bottom: 2px solid #ff6f61;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1e2a41;
+    text-decoration: none;
+}
+
+header nav a.logo span {
+    color: #ff6f61;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 36px;
+    /* трохи більше простору */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a:focus {
+    color: #ff6f61;
+    outline: none;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-list a {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus {
+    color: #ff6f61;
+    outline: none;
+}
+
 /* ---------- Базові налаштування ---------- */
 
 body {
@@ -285,51 +360,36 @@ section:nth-child(3) p {
     margin: 0;
 }
 
-/* ---------- Футер ---------- */
-
+/* Футер */
 footer {
-    padding: 20px 40px;
-    background-color: #fff;
-    text-align: center;
-    color: #1e2a41;
-    font-size: 14px;
+    padding: 30px 60px;
+    background-color: #1e2a41;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
 }
 
-footer .logo {
-    display: inline-block;
-    margin-bottom: 8px;
-    font-size: 24px;
+footer a.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #ff6f61;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* ---------- Додатково ---------- */
-
-/* Задаємо курсор pointer кнопкам */
-
-button {
-    cursor: pointer;
+footer a.logo:hover,
+footer a.logo:focus {
+    color: #e65b4f;
+    outline: none;
 }
 
-/* Видалити дефолтні відступи списків */
-
-ul {
-    padding-left: 0;
+footer p {
     margin: 0;
-}
-
-/* Зробити інтервали між словами нормальними */
-
-h1,
-h2,
-h3,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Фокус для інтерактивних елементів */
-
-a:focus-visible,
-button:focus-visible {
-    outline: 2px solid #ff6f61;
-    outline-offset: 2px;
+    max-width: 600px;
+    text-align: left;
 }
