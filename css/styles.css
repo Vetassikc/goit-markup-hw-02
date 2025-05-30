@@ -16,23 +16,12 @@ body {
     margin-right: auto;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
+
 
 ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -41,13 +30,6 @@ img {
 }
 
 /* Хедер */
-.header {
-    border-bottom: 1px solid #e7e9fc;
-}
-
-.header-container {
-    text-align: left;
-}
 
 
 .logo {
@@ -63,11 +45,6 @@ img {
 
 .logo span {
     color: #2e2f42;
-}
-
-.nav-list {
-    margin: 0;
-    padding: 0;
 }
 
 .nav-list li {
@@ -92,11 +69,6 @@ img {
 
 .contact {
     font-style: normal;
-}
-
-.contact-list {
-    margin: 0;
-    padding: 0;
 }
 
 .contact-list li {
@@ -144,8 +116,6 @@ img {
     background-color: #4d5ae5;
     border: none;
     cursor: pointer;
-    min-width: 169px;
-    height: 56px;
 }
 
 .hero-button:hover,
@@ -240,6 +210,7 @@ img {
     background-color: #ffffff;
     margin-bottom: 48px;
     text-align: center;
+    /* прибрано display, box-shadow, border */
 }
 
 .portfolio-item-title {
@@ -265,8 +236,6 @@ img {
 .footer {
     background-color: #2e2f42;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .footer-logo {
