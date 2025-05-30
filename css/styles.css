@@ -18,7 +18,6 @@ body {
 
 .visually-hidden {
     position: absolute;
-    /* необхідно для приховання */
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -47,13 +46,9 @@ img {
 }
 
 .header-container {
-    /* не використовуємо flex */
     text-align: left;
 }
 
-.nav {
-    /* залишаємо за замовчуванням */
-}
 
 .logo {
     font-family: "Raleway", sans-serif;
